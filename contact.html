@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Soil Passport™</title>
+<meta name="description" content="Tell us about your land, your project, or your technology. Contact the Soil Passport™ team in London and Cambridge, UK.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<!-- Contact-page layout only. Move into styles.css if you like. -->
+<style>
+  .contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:32px;align-items:start}
+  .office-cards{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+  .contact-line{grid-column:1/-1;margin:8px 0 0}
+  .contact-form-card{border:1px solid rgba(0,0,0,.18);border-radius:12px;padding:28px}
+  .contact-form-card label{display:block;margin-bottom:18px;font-weight:500}
+  .contact-form-card input,
+  .contact-form-card select,
+  .contact-form-card textarea{display:block;width:100%;margin-top:6px;padding:12px 14px;font:inherit;border:1px solid rgba(0,0,0,.25);border-radius:6px;background:#fff;box-sizing:border-box}
+  .contact-form-card textarea{min-height:120px;resize:vertical}
+  #form-status{margin:12px 0 0;min-height:1.4em}
+  .call-note{text-align:center}
+  @media (max-width:900px){
+    .contact-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:560px){
+    .office-cards{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="brand" href="index.html">Soil Passport™</a><nav aria-label="Main"><ul>
+<li><a href="platform.html">Platform</a></li>
+<li class="has-sub"><a href="spx.html" aria-haspopup="true">SPX™ Products</a><ul class="sub"><li><a href="spx-biochar.html">BioChar™</a></li><li><a href="spx-biooil.html">BioOil™</a></li><li><a href="spx-biotar.html">BioTar™</a></li><li><a href="spx-bioh2.html">BioH₂™</a></li><li><a href="spx-power.html">Power™</a></li><li><a href="spx-carbon.html">Carbon™</a></li></ul></li>
+<li><a href="industries.html">Industries</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="marketplace.html">Marketplace</a></li><li><a href="partners.html">Partners</a></li><li><a href="resources.html">Resources</a></li>
+<li class="has-sub sub-right"><a href="about.html" aria-haspopup="true" aria-current="page">Company</a><ul class="sub"><li><a href="about.html">About</a></li><li><a href="index.html#contact">Contact</a></li><li><a href="partners.html#apply">Partner With Us</a></li></ul></li>
+<li><a class="nav-cta" href="partners.html#apply">Partner With Us</a></li>
+</ul></nav></div></header>
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h1>Tell us about your land, your project, or your technology.</h1>
+        <p>Whether you're a farmer, an FPO, a technology company or an investor — leave your details and our team will follow up.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFICES + FORM -->
+  <section class="block">
+    <div class="wrap contact-grid">
+
+      <div class="office-cards">
+        <div class="card">
+          <p class="eyebrow">Head Office / Corporate Office</p>
+          <h3>Soil Passport Ltd</h3>
+          <p>Sustainable Workspaces, 5th Floor, County Hall, Belvedere Road, London, United Kingdom, SE1 7PB</p>
+          <p><small>Company No. 17385128 (England &amp; Wales)</small></p>
+        </div>
+
+        <div class="card">
+          <p class="eyebrow">Research &amp; Development Center</p>
+          <h3>Soil Passport Research and Development Center</h3>
+          <p>The Cambridge Institute for Sustainability Leadership (CISL), The Entopia Building, 1 Regent Street, Cambridge, CB2 1GG, UK</p>
+        </div>
+
+        <p class="contact-line">Email: <a href="mailto:support@soilpassport.com">support@soilpassport.com</a></p>
+        <div class="contact-line">
+          <a class="btn" href="https://calendly.com/soilpassport/30min" target="_blank" rel="noopener">Book a call →</a>
+        </div>
+      </div>
+
+      <form id="contact-form" class="contact-form-card">
+        <label>Name
+          <input name="name" required maxlength="100" autocomplete="name">
+        </label>
+
+        <label>Email
+          <input name="email" type="email" required maxlength="200" autocomplete="email">
+        </label>
+
+        <label>I am a…
+          <select name="role">
+            <option>Farmer</option>
+            <option>FPO</option>
+            <option>Technology Partner</option>
+            <option>Implementation Partner</option>
+            <option>Investor</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <label>Country
+          <input name="country" required maxlength="100" autocomplete="country-name">
+        </label>
+
+        <label>Message
+          <textarea name="message" rows="5" required maxlength="2000"></textarea>
+        </label>
+
+        <!-- Spam trap: keep hidden, same as index.html -->
+        <input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+
+        <button class="btn" type="submit">Send message</button>
+        <p id="form-status" role="status"></p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- CALL BAND -->
+  <section class="cta-band">
+    <div class="wrap call-note">
+      <h2>Prefer to talk it through first?</h2>
+      <p>Book a 30-minute call directly with our team.</p>
+      <div class="cta-row">
+        <a class="btn" href="https://calendly.com/soilpassport/30min" target="_blank" rel="noopener">Book a call →</a>
+        <a class="btn alt" href="partners.html#apply">Partner With Us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <strong>Soil Passport™</strong><br>
+      Intelligence for soil. Technology for climate. Infrastructure for the future.<br>
+      Soil Passport Ltd, United Kingdom.
+    </div>
+    <div>
+      <a href="platform.html">Platform</a> · <a href="spx.html">SPX™</a> · <a href="solutions.html">Solutions</a> ·
+      <a href="partners.html">Partners</a> · <a href="about.html">About</a> · <a href="faq.html">FAQ</a> ·
+      <a href="contact.html">Contact</a> · <a href="terms.html">Terms &amp; Conditions</a> · <a href="sitemap.html">Sitemap</a>
+    </div>
+    <div><small>© 2026 Soil Passport™ and SPX™ are trademarks of Soil Passport Ltd (Company No. 17385128), Sustainable Workspaces, 5th Floor, County Hall, Belvedere Road, London, United Kingdom, SE1 7PB</small></div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="main.js"></script>
+<script src="cookie.js"></script>
+</body>
+</html>
